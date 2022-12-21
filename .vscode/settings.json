@@ -1,0 +1,15 @@
+{
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "runTerminalCommand.commands": [
+        {
+            "name": "Run tests with coverage on Windows (pytest)",
+            "auto": true,
+            "command": "cd ..; & .venv/Scripts/Activate.ps1; pytest --cov . --cov-report xml tests;",
+            "hotkey": "ctrl+alt+shift+t"
+        }
+    ]
+}
