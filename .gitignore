@@ -5,3 +5,5 @@ __pycache__/
 # Coverage files
 .coverage
 coverage.xml
+# Junit output
+junit.xml

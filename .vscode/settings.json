@@ -7,7 +7,15 @@
     "runTerminalCommand.commands": [
         {
             "name": "Run tests with coverage on Windows (pytest)",
-            "command": "cd ..; & .venv/Scripts/Activate.ps1; pytest --cov . --cov-report xml tests;",
-        }
+            "command": "cd ..; & .venv/Scripts/Activate.ps1; pytest --cov pymailbaby --junitxml=junit.xml --cov-report xml tests;",
+        },
+        {
+            "name": "Get hacking!, Install pip development requirements on Windows",
+            "command": "cd ..; & .venv/Scripts/Activate.ps1; pip install -r requirements-dev.txt",
+        }, 
+        {
+            "name": "Generate badges on Windows",
+            "command": "cd ..; & .venv/Scripts/Activate.ps1; genbadge coverage -i ./coverage.xml; genbadge tests -i ./junit.xml;",
+        }, 
     ]
 }

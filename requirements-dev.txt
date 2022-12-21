@@ -3,3 +3,4 @@ setuptools-scm ~= 6.4.2
 requests-mock ~= 1.9.3
 pytest ~= 7.1.2
 pytest-cov ~= 3.0
+genbadge[tests] ~= 1.1.0
